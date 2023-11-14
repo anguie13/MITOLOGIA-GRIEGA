@@ -1,0 +1,53 @@
+body {
+  margin: 0 auto;
+  /*overflow: hidden; */
+}
+
+.contenedor {
+  position: relative;
+  text-align: center;
+}
+
+.fondo {
+  width: 100%; /* Ajusta el ancho de la imagen según sea necesario */
+  height: auto; /* Hace que la altura se ajuste automáticamente para mantener la proporción */
+  display: block;
+}
+
+.texto-sobre-imagen {
+  position: absolute;
+  top: 20%; /* Coloca el texto en la mitad superior de la imagen */
+  left: 50%; /* Coloca el texto en el centro horizontal de la imagen */
+  transform: translate(-50%, -50%); /* Centra el texto correctamente */
+  color: white; /* Color del texto */
+  font-size: 30px; /* Tamaño de fuente del texto */
+  font-weight: bold; /* Peso de la fuente */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+  -webkit-text-stroke: 2px #ff8912; /* Grosor y color del trazo para WebKit (Safari/Chrome) */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.boton-sobre-imagen {
+  position: absolute;
+  top: 32%; /* Coloca el botón en la mitad superior de la imagen */
+  left: 50%; /* Coloca el botón en el centro horizontal de la imagen */
+  transform: translate(-50%, -50%); /* Centra el botón correctamente */
+  background-color: #ff8912; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 15px 50px; /* Ajusta el relleno del botón según sea necesario */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Añade esquinas redondeadas al botón */
+  cursor: pointer;
+  font-size: 25px; /* Cambia el cursor al pasar sobre el botón */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  transition: box-shadow 0.3s ease;
+}
+
+.boton-sobre-imagen:hover {
+  filter: drop-shadow(
+    0 0 2em #cdd6d9aa
+  ); /* Cambia la sombra al pasar el mouse sobre el botón */
+  background-color: #f1c40f;
+}
