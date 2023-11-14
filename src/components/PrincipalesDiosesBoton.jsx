@@ -5,7 +5,7 @@ import "../estilos.css";
 function PrincipalesDiosesBoton({nom_dios = ''}) {
   return (
     <div className="box">
-    <img src="src/assets/img/btn_dios.png" alt="" />
+    <img src="src/assets/img/btn_dios.png" alt={'boton dios '+ nom_dios} />
     <span className="overlay-text"><p>{nom_dios}</p></span>
     </div>
     

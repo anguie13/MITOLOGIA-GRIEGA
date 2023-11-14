@@ -1,7 +1,7 @@
 import React from "react";
-import PrincipalesDiosesBoton from "./PrincipalesDiosesBoton";
 import BotonVacio from "./BotonVacio";
 import MenuBoton from "./MenuBoton";
+import { Link } from "react-router-dom";
 
 function Menu() {
   return (
@@ -19,17 +19,22 @@ function Menu() {
             text_alt="boton heroes"
             text_btn="Heroes"
           />
+
           <MenuBoton
             url="src/assets/img/btn_criaturas.png"
             text_alt="boton Criaturas y Monstruos"
             text_btn="Criaturas y Monstruos"
           />
           <BotonVacio />
-          <MenuBoton
-            url="src/assets/img/btn_dioses.png"
-            text_alt="boton dioses"
-            text_btn="Dioses"
-          />
+
+          <Link to="/principales_dioses">
+            <MenuBoton
+              url="src/assets/img/btn_dioses.png"
+              text_alt="boton dioses"
+              text_btn="Dioses"
+            />
+          </Link>
+
           <BotonVacio />
           <BotonVacio />
           <MenuBoton

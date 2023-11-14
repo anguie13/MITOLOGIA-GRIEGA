@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
   overflow-x: hidden;
+  background-color: black;
 }
 
 .contenedor {
@@ -8,21 +9,20 @@ body {
   text-align: center;
 }
 
-
 .fondo {
   width: 100%; /* Ajusta el ancho de la imagen según sea necesario */
   height: auto; /* Hace que la altura se ajuste automáticamente para mantener la proporción */
   display: block;
 }
 
-.fondo2{
+.fondo2 {
   width: auto;
   height: 2400px;
 }
 
-.fondo3{
+.fondo3 {
   width: 130%; /* Ajusta el ancho de la imagen según sea necesario */
-  height: auto; 
+  height: auto;
 }
 
 .texto-sobre-imagen {
@@ -47,8 +47,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #1a215f;
   -webkit-text-stroke: 1px #9ae3f6;
-  font-size: 50px
-  
+  font-size: 50px;
 }
 
 .boton-sobre-imagen {
@@ -97,8 +96,6 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bolder;
 }
-
-
 
 .wrapper {
   display: grid;
@@ -167,7 +164,7 @@ body {
   grid-area: 1 / 1 / span 1 / span 1; /* Cambia el color del texto según tus preferencias */
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: x-large;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -219,3 +216,65 @@ hr {
   -webkit-text-stroke: 1px #9ae3f6;
   font-size: 50px;
 }
+
+.tablaDescripcion {
+  color: white;
+  padding-block: 100px;
+}
+
+.tablaDescripcion th td {
+  padding: 15px;
+  text-align: left;
+}
+
+.columna1 {
+  width: 10%;
+}
+
+.columna2 {
+  width: 90%;
+  padding-left: 0%;
+}
+
+.columna2 ul {
+  list-style: none; /* Quitar la decoración de la lista desordenada */
+  padding: 0; /* Eliminar el relleno predeterminado de la lista */
+  margin: 0; /* Eliminar el margen predeterminado de la lista */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+  text-align: justify;
+}
+
+.columna2 li{
+  margin-bottom: 30px; 
+}
+
+.descripcion_img{
+  width: 400px;
+  height: auto;
+}
+
+.btn-siguiente{
+  margin-top: 20px;
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.btn-siguiente button{
+  background-color: #cda434;
+  align-items: end;
+  height: 40px;
+  font-size: medium;
+  border-radius: 10px;
+  border: none;
+  width: 100px;
+  color: black;
+  font-weight: bolder;
+}
+
+.btn-siguiente button:hover{
+  background-color: #f9db5c;
+}
+
+

@@ -3,6 +3,7 @@ import "../estilos.css";
 import PrincipalesDiosesBoton from "./PrincipalesDiosesBoton";
 import BotonVacio from "./BotonVacio";
 import TitleDioses from "./TitleDioses";
+import { Link } from "react-router-dom";
 
 function PrincipalesDioses() {
   return (
@@ -17,7 +18,10 @@ function PrincipalesDioses() {
       </div>
       <div className="boton-dios-sobre-imagen">
         <div className="wrapper">
-          <PrincipalesDiosesBoton className="btn-dios" nom_dios="ZEUS" />
+          <Link to="/descripcion-dioses">
+            <PrincipalesDiosesBoton nom_dios="ZEUS" />
+          </Link>
+
           <BotonVacio />
           <BotonVacio />
           <BotonVacio />
