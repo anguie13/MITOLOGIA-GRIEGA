@@ -20,6 +20,11 @@ body {
   height: 2400px;
 }
 
+.fondo3{
+  width: 130%; /* Ajusta el ancho de la imagen según sea necesario */
+  height: auto; 
+}
+
 .texto-sobre-imagen {
   position: absolute;
   top: 20%; /* Coloca el texto en la mitad superior de la imagen */
@@ -48,7 +53,7 @@ body {
 
 .boton-sobre-imagen {
   position: absolute;
-  top: 5%; /* Coloca el botón en la mitad superior de la imagen */
+  top: 40%; /* Coloca el botón en la mitad superior de la imagen */
   left: 50%; /* Coloca el botón en el centro horizontal de la imagen */
   transform: translate(-50%, -50%); /* Centra el botón correctamente */
   background-color: #ff8912; /* Color de fondo del botón */
@@ -63,6 +68,13 @@ body {
   transition: box-shadow 0.3s ease;
 }
 
+.boton-sobre-imagen:hover {
+  filter: drop-shadow(
+    0 0 2em #cdd6d9aa
+  ); /* Cambia la sombra al pasar el mouse sobre el botón */
+  background-color: #f1c40f;
+}
+
 .boton-dios-sobre-imagen {
   position: absolute;
   top: 200%; /* Coloca el botón en la mitad superior de la imagen */
@@ -75,12 +87,17 @@ body {
   transition: box-shadow 0.3s ease;
 }
 
-.boton-sobre-imagen:hover {
-  filter: drop-shadow(
-    0 0 2em #cdd6d9aa
-  ); /* Cambia la sombra al pasar el mouse sobre el botón */
-  background-color: #f1c40f;
+.boton-menu-sobre-imagen {
+  position: absolute;
+  top: 100%; /* Coloca el botón en la mitad superior de la imagen */
+  left: 50%; /* Coloca el botón en el centro horizontal de la imagen */
+  transform: translate(-50%, -50%); /* Centra el botón correctamente */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Añade esquinas redondeadas al botón */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
 }
+
 
 
 .wrapper {
@@ -93,6 +110,14 @@ body {
   padding: 4em;
 }
 
+.box_menu {
+  justify-items: legacy;
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 270px 270px 270px 270px;
+  grid-gap: 0.2px;
+}
+
 .box {
   position: relative;
   background-color: transparent;
@@ -101,7 +126,23 @@ body {
   overflow: hidden;
 }
 
+.box-menu-principal {
+  position: relative;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 30px;
+}
+
 .box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.box-menu-principal img {
   width: 100%;
   height: 100%;
   display: block;
@@ -115,6 +156,19 @@ body {
   transform: translate(-50%, -50%);
   color: black;
   grid-area: 1 / 1 / span 1 / span 1; /* Cambia el color del texto según tus preferencias */
+}
+
+.overlay-text-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  grid-area: 1 / 1 / span 1 / span 1; /* Cambia el color del texto según tus preferencias */
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-large;
+  text-align: center;
 }
 
 .texto {
@@ -137,6 +191,7 @@ body {
   color: #1a215f;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: center;
 }
 
 table {

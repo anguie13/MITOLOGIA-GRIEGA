@@ -13,7 +13,7 @@ function Index() {
       <div className="texto-sobre-imagen">
         <h1>TRAVESÍA EN LA MITOLOGÍA GRIEGA</h1>
       </div>
-      <Link to="/principales_dioses">
+      <Link to="/menu">
         <button className="boton-sobre-imagen">Play</button>
       </Link>
     </div>

@@ -16,45 +16,44 @@ function PrincipalesDioses() {
         <TitleDioses title="Principales Dioses" />
       </div>
       <div className="boton-dios-sobre-imagen">
-      <div class="wrapper">
-        <PrincipalesDiosesBoton className="btn-dios" nom_dios="ZEUS" />
-        <BotonVacio />
-        <BotonVacio />
-        <BotonVacio />
-        <PrincipalesDiosesBoton nom_dios="HERA" />
-        <BotonVacio />
-        <BotonVacio />
-        <BotonVacio />
-        <PrincipalesDiosesBoton nom_dios="POSEIDÓN" />
-        <BotonVacio />
-        <PrincipalesDiosesBoton nom_dios="ATENEA" />
-        <BotonVacio />
-        <PrincipalesDiosesBoton nom_dios="HEFESTO" />
-        <BotonVacio />
-        <BotonVacio />
-        <BotonVacio />
-        <PrincipalesDiosesBoton nom_dios="APOLO" />
-        <BotonVacio />
-        <BotonVacio />
-        <BotonVacio />
-        <PrincipalesDiosesBoton nom_dios="ARTEMISA" />
-        <BotonVacio />
-        <PrincipalesDiosesBoton nom_dios="HERMES" />
-        <BotonVacio />
-        <PrincipalesDiosesBoton nom_dios="ARES" />
-        <BotonVacio />
-        <BotonVacio />
-        <BotonVacio />
-        <PrincipalesDiosesBoton nom_dios="AFRODITA" />
-        <BotonVacio />
-        <BotonVacio />
-        <BotonVacio />
-        <PrincipalesDiosesBoton nom_dios="DIONISIO" />
-        <BotonVacio />
-        <PrincipalesDiosesBoton nom_dios="DEMÉTER" />
+        <div className="wrapper">
+          <PrincipalesDiosesBoton className="btn-dios" nom_dios="ZEUS" />
+          <BotonVacio />
+          <BotonVacio />
+          <BotonVacio />
+          <PrincipalesDiosesBoton nom_dios="HERA" />
+          <BotonVacio />
+          <BotonVacio />
+          <BotonVacio />
+          <PrincipalesDiosesBoton nom_dios="POSEIDÓN" />
+          <BotonVacio />
+          <PrincipalesDiosesBoton nom_dios="ATENEA" />
+          <BotonVacio />
+          <PrincipalesDiosesBoton nom_dios="HEFESTO" />
+          <BotonVacio />
+          <BotonVacio />
+          <BotonVacio />
+          <PrincipalesDiosesBoton nom_dios="APOLO" />
+          <BotonVacio />
+          <BotonVacio />
+          <BotonVacio />
+          <PrincipalesDiosesBoton nom_dios="ARTEMISA" />
+          <BotonVacio />
+          <PrincipalesDiosesBoton nom_dios="HERMES" />
+          <BotonVacio />
+          <PrincipalesDiosesBoton nom_dios="ARES" />
+          <BotonVacio />
+          <BotonVacio />
+          <BotonVacio />
+          <PrincipalesDiosesBoton nom_dios="AFRODITA" />
+          <BotonVacio />
+          <BotonVacio />
+          <BotonVacio />
+          <PrincipalesDiosesBoton nom_dios="DIONISIO" />
+          <BotonVacio />
+          <PrincipalesDiosesBoton nom_dios="DEMÉTER" />
+        </div>
       </div>
-      </div>
-      
     </div>
   );
 }
