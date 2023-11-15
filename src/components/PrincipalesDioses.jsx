@@ -14,48 +14,70 @@ function PrincipalesDioses() {
         alt="Templo de atenea"
       />
       <div className="texto-principales-dioses">
-        <TitleDioses title="Principales Dioses" />
+        <TitleDioses title="Dioses del Olimpo" />
       </div>
       <div className="boton-dios-sobre-imagen">
         <div className="wrapper">
-          <Link to="/descripcion-dioses">
+          <Link to="/descripcion_dioses_zeus">
             <PrincipalesDiosesBoton nom_dios="ZEUS" />
           </Link>
 
           <BotonVacio />
           <BotonVacio />
           <BotonVacio />
-          <PrincipalesDiosesBoton nom_dios="HERA" />
+          <Link to="/descripcion_dioses_hera">
+            <PrincipalesDiosesBoton nom_dios="HERA" />
+          </Link>
           <BotonVacio />
           <BotonVacio />
           <BotonVacio />
+          <Link to="/descripcion_dioses_poseidon">
           <PrincipalesDiosesBoton nom_dios="POSEIDÓN" />
+          </Link>
           <BotonVacio />
+          <Link to="/descripcion_dioses_atenea">
           <PrincipalesDiosesBoton nom_dios="ATENEA" />
+          </Link>
           <BotonVacio />
+          <Link to="/descripcion_dioses_hefesto">
           <PrincipalesDiosesBoton nom_dios="HEFESTO" />
+          </Link>
           <BotonVacio />
           <BotonVacio />
           <BotonVacio />
+          <Link to="/descripcion_dioses_apolo">
           <PrincipalesDiosesBoton nom_dios="APOLO" />
+          </Link>
           <BotonVacio />
           <BotonVacio />
           <BotonVacio />
+          <Link to="/descripcion_dioses_artemisa">
           <PrincipalesDiosesBoton nom_dios="ARTEMISA" />
+          </Link>
           <BotonVacio />
+          <Link to="/descripcion_dioses_hermes">
           <PrincipalesDiosesBoton nom_dios="HERMES" />
+          </Link>
           <BotonVacio />
+          <Link to="/descripcion_dioses_ares">
           <PrincipalesDiosesBoton nom_dios="ARES" />
+          </Link>
           <BotonVacio />
           <BotonVacio />
           <BotonVacio />
+          <Link to="/descripcion_dioses_afrodita">
           <PrincipalesDiosesBoton nom_dios="AFRODITA" />
+          </Link>
           <BotonVacio />
           <BotonVacio />
           <BotonVacio />
+          <Link to="/descripcion_dioses_dionisio">
           <PrincipalesDiosesBoton nom_dios="DIONISIO" />
+          </Link>
           <BotonVacio />
+          <Link to="/descripcion_dioses_demeter">
           <PrincipalesDiosesBoton nom_dios="DEMÉTER" />
+          </Link>
         </div>
       </div>
     </div>
