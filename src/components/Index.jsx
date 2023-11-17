@@ -11,7 +11,7 @@ function Index() {
         alt="Olimpo en unatardecer"
       />
       <div className="texto-sobre-imagen">
-        <h1>TRAVESÍA EN LA MITOLOGÍA GRIEGASSSS</h1>
+        <h1>TRAVESÍA EN LA MITOLOGÍA GRIEGA</h1>
       </div>
       <Link to="/menu">
         <button className="boton-sobre-imagen">Play</button>

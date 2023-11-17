@@ -14,6 +14,7 @@ import DescripciónDiosesAres from "./components/DescripciónDiosesAres";
 import DescripciónDiosesAfrodita from "./components/DescripciónDiosesAfrodita";
 import DescripciónDiosesDionisio from "./components/DescripciónDiosesDionisio";
 import DescripciónDiosesDemeter from "./components/DescripciónDiosesDemeter";
+import Zeus from "./components/Zeus";
 
 function App() {
   return (
@@ -69,6 +70,10 @@ function App() {
         <Route
           path="/descripcion_dioses_demeter"
           element={<DescripciónDiosesDemeter />}
+        />
+        <Route
+          path="/zeus"
+          element={<Zeus />}
         />
       </Routes>
     </Router>

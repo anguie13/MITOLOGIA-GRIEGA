@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 function DescripciónDiosesZeus() {
   return (
@@ -42,7 +44,9 @@ function DescripciónDiosesZeus() {
         </tr>
         <tr className="btn-siguiente">
           <td></td>
+          <Link to="/zeus">
           <button>Siguiente</button>
+      </Link>
         </tr>
       </table>
     </div>

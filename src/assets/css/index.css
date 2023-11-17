@@ -1,0 +1,51 @@
+body {
+  background: url("src/assets/img/fondo_Index.svg") no-repeat center center
+    fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la pantalla */
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container{
+  align-items: center;
+}
+
+.texto-sobre-imagen {
+  color: white; /* Color del texto */
+  font-size: 30px; /* Tamaño de fuente del texto */
+  font-weight: bold; /* Peso de la fuente */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+  -webkit-text-stroke: 2px #ff8912; /* Grosor y color del trazo para WebKit (Safari/Chrome) */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.boton-sobre-imagen {
+  margin-top: 2em;
+  margin-inline: 50%;
+  cursor: pointer;
+  font-size: 25px; /* Cambia el cursor al pasar sobre el botón */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  background-color: #ff8912; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Agrega bordes redondeados al botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.boton-sobre-imagen:hover {
+  filter: drop-shadow(
+    0 0 2em #cdd6d9aa
+  ); /* Cambia la sombra al pasar el mouse sobre el botón */
+  background-color: #f1c40f;
+}
