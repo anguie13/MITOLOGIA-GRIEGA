@@ -438,6 +438,32 @@ hr {
   background-color: #ffffffd7;
 }
 
+.container_video{
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 0%;
+}
+
+.video-container {
+  position: relative;
+  width: 60%; /* Ajusta según sea necesario */
+  margin: auto;
+  padding-top: 0;
+}
+
+.btn-video button{
+  background-color: #BEBEBE;
+  height: 40px;
+  font-size: medium;
+  border-radius: 10px;
+  border: none;
+  width: 150px;
+  color: black;
+  font-weight: bolder;
+  margin-top: 2em;
+  margin-left: 25%;
+}
+
 
 
 

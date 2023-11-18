@@ -33,7 +33,7 @@ function Zeus() {
         <Link to="/descripcion_dioses_zeus">
           <button>Anterior</button>
         </Link>
-        <Link to="/videozeus">
+        <Link to="/zeus_video">
           <button>Siguiente</button>
         </Link>
       </div>

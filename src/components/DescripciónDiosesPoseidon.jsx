@@ -7,7 +7,7 @@ function DescripciónDiosesPoseidon() {
     <div>
       <table className="tablaDescripcion">
         <tr>
-          <td class="columna1">
+          <td className="columna1">
             <img
               className="descripcion_img"
               src="src/assets/img/descripcion_poseidon.jpg"

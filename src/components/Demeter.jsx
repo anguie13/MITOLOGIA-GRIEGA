@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Deméter() {
   return (
-    <div class="dios-container">
+    <div className="dios-container">
       <img
         src="src/assets/img/pergamino.svg"
         alt=""
