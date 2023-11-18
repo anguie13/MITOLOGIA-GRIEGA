@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function DescripciónDiosesHera() {
   return (
@@ -27,7 +28,8 @@ function DescripciónDiosesHera() {
                 <strong>Debilidades: </strong>Celos, venganza
               </li>
               <li>
-                <strong>Rol: </strong>Reina del Olimpo y protectora del matrimonio
+                <strong>Rol: </strong>Reina del Olimpo y protectora del
+                matrimonio
               </li>
               <li>
                 <strong>Arma: </strong>Cetro
@@ -40,7 +42,9 @@ function DescripciónDiosesHera() {
         </tr>
         <tr className="btn-siguiente">
           <td></td>
-          <button>Siguiente</button>
+          <Link to="/hera">
+            <button>Siguiente</button>
+          </Link>
         </tr>
       </table>
     </div>

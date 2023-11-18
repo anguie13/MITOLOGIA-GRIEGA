@@ -5,12 +5,12 @@ import BotonVacio from "./BotonVacio";
 import TitleDioses from "./TitleDioses";
 import { Link } from "react-router-dom";
 
-function PrincipalesDioses() {
+function DiosesOlimpo() {
   return (
     <div>
       <img
         className="fondo2"
-        src="src/assets/img/fondo_principales_dioses.svg"
+        src="src/assets/img/fondo_dioses_olimpo.svg"
         alt="Templo de atenea"
       />
       <div className="texto-principales-dioses">
@@ -84,4 +84,4 @@ function PrincipalesDioses() {
   );
 }
 
-export default PrincipalesDioses;
+export default DiosesOlimpo;

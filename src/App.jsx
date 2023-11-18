@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Index from "./components/Index";
 import Menu from "./components/Menu";
-import PrincipalesDioses from "./components/PrincipalesDioses";
+import DiosesOlimpo from "./components/DiosesOlimpo";
 import DescripciónDiosesZeus from "./components/DescripciónDiosesZeus";
 import DescripciónDiosesHera from "./components/DescripciónDiosesHera";
 import DescripciónDiosesPoseidon from "./components/DescripciónDiosesPoseidon";
@@ -15,6 +15,10 @@ import DescripciónDiosesAfrodita from "./components/DescripciónDiosesAfrodita"
 import DescripciónDiosesDionisio from "./components/DescripciónDiosesDionisio";
 import DescripciónDiosesDemeter from "./components/DescripciónDiosesDemeter";
 import Zeus from "./components/Zeus";
+import Hera from "./components/Hera";
+import Demeter from "./components/Demeter";
+import Fondo from "./components/fondo";
+import PreguntaD from "./components/PreguntaD";
 
 function App() {
   return (
@@ -22,7 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/menu" element={<Menu />} />
-        <Route path="/principales_dioses" element={<PrincipalesDioses />} />
+        <Route path="/dioses_olimpo" element={<DiosesOlimpo />} />
         <Route
           path="/descripcion_dioses_zeus"
           element={<DescripciónDiosesZeus />}
@@ -71,10 +75,11 @@ function App() {
           path="/descripcion_dioses_demeter"
           element={<DescripciónDiosesDemeter />}
         />
-        <Route
-          path="/zeus"
-          element={<Zeus />}
-        />
+        <Route path="/zeus" element={<Zeus />} />
+        <Route path="/hera" element={<Hera />} />
+        <Route path="/demeter" element={<Demeter />} />
+        <Route path="/fondo" element={<Fondo />} />
+        <Route path="/pregunta_d" element={<PreguntaD />} />
       </Routes>
     </Router>
   );

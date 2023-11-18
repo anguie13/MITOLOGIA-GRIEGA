@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 function DescripciónDiosesZeus() {
   return (
     <div>
@@ -28,7 +27,8 @@ function DescripciónDiosesZeus() {
                 sobre la naturaleza
               </li>
               <li>
-                <strong>Debilidades: </strong>A veces impulsivo y susceptible a la ira
+                <strong>Debilidades: </strong>A veces impulsivo y susceptible a
+                la ira
               </li>
               <li>
                 <strong>Rol: </strong>Rey del Olimpo y gobernante de los dioses
@@ -42,11 +42,13 @@ function DescripciónDiosesZeus() {
             </ul>
           </td>
         </tr>
-        <tr className="btn-siguiente">
-          <td></td>
+        <tr className="btn-descripcion-dioses">
+          <Link to="/dioses_olimpo">
+            <button>Anterior</button>
+          </Link>
           <Link to="/zeus">
-          <button>Siguiente</button>
-      </Link>
+            <button className="btn_siguiente">Siguiente</button>
+          </Link>
         </tr>
       </table>
     </div>

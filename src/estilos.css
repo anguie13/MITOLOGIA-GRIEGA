@@ -262,19 +262,26 @@ hr {
   text-align: center;
 }
 
-.btn-siguiente button{
+.btn-descripcion-dioses button{
   background-color: #cda434;
-  align-items: end;
   height: 40px;
   font-size: medium;
   border-radius: 10px;
   border: none;
-  width: 100px;
+  width: 150px;
   color: black;
   font-weight: bolder;
+  margin-top: 2em;
+  margin-left: 120px;
 }
 
-.btn-siguiente button:hover{
+.btn_siguiente{
+  position: absolute;
+  left: 75%;
+}
+
+
+.btn-descripcion-dioses button:hover{
   background-color: #f9db5c;
 }
 
@@ -358,7 +365,8 @@ hr {
 .dios-container {
   position: relative;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1270px;
+  margin-inline: 2em;
 }
 
 .pergamino-image {
@@ -369,7 +377,7 @@ hr {
 
 .text-overlay-dioses {
   position: absolute;
-  top: 40%;
+  top: 32%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -412,9 +420,10 @@ hr {
 .centered-button-dioses {
   position: absolute;
   left: 50%;
+  margin-top: 30px;
   transform: translate(-50%, -50%);
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 20px;
   background-color: #BEBEBE;
   color: black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -422,12 +431,10 @@ hr {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 30px;
-  margin-bottom: 2em;
 }
 
 .centered-button-dioses:hover {
-  background-color: #fff;
+  background-color: #ffffffd7;
 }
 
 

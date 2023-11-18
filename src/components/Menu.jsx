@@ -17,7 +17,7 @@ function Menu() {
           <MenuBoton
             url="src/assets/img/btn_heroes.png"
             text_alt="boton heroes"
-            text_btn="Heroes"
+            text_btn="Héroes"
           />
 
           <MenuBoton
@@ -27,7 +27,7 @@ function Menu() {
           />
           <BotonVacio />
 
-          <Link to="/principales_dioses">
+          <Link to="/dioses_olimpo">
             <MenuBoton
               url="src/assets/img/btn_dioses.png"
               text_alt="boton dioses"
