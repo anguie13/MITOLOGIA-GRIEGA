@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function DescripciónDiosesArtemisa() {
   return (
@@ -42,9 +43,13 @@ function DescripciónDiosesArtemisa() {
             </ul>
           </td>
         </tr>
-        <tr className="btn-siguiente">
-          <td></td>
-          <button>Siguiente</button>
+        <tr className="btn-descripcion-dioses">
+          <Link to="/dioses_olimpo">
+            <button>Anterior</button>
+          </Link>
+          <Link to="/artemisa">
+            <button className="btn_siguiente">Siguiente</button>
+          </Link>
         </tr>
       </table>
     </div>

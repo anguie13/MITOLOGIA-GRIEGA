@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
-function Demeter() {
+function Deméter() {
   return (
     <div class="dios-container">
       <img
@@ -13,10 +12,10 @@ function Demeter() {
       <div className="text-overlay-dioses">
         <p className="title-dioses">Demeter</p>
         <p className="limited-text-dioses">
-          Como diosa griega de la agricultura y la cosecha, Deméter controlaba
-          las estaciones y el crecimiento de los cultivos. Por lo tanto, los
-          antiguos griegos adoraban y rezaban a Deméter con la esperanza de que
-          sus tierras produjeran con éxito.
+          Hija de Cronos y Rea. Hermana de Zeus. Diosa de la fertilidad, las
+          estaciones, de la agricultura y la naturaleza. Los antiguos griegos
+          adoraban y rezaban a Deméter con la esperanza de que sus tierras
+          produjeran con éxito.
           <br />
           <br />
           Deméter enseñó a los hombres mortales cómo cultivar maíz, y se creía
@@ -26,15 +25,21 @@ function Demeter() {
         </p>
       </div>
       <img
-        src="src/assets/img/descripcion_demeter.svg"
+        src="src/assets/img/demeter-circle.svg"
         alt=""
         className="bottom-right-image-dioses"
       />
-      <Link to="/fondo">
-      <button class="centered-button-dioses">Siguiente</button>
-      </Link>
+
+      <div className="btn-dioses">
+        <Link to="/descripcion_dioses_demeter">
+          <button>Anterior</button>
+        </Link>
+        <Link to="/videozeus">
+          <button>Siguiente</button>
+        </Link>
+      </div>
     </div>
   );
 }
 
-export default Demeter;
+export default Deméter;

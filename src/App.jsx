@@ -16,7 +16,18 @@ import DescripciónDiosesDionisio from "./components/DescripciónDiosesDionisio"
 import DescripciónDiosesDemeter from "./components/DescripciónDiosesDemeter";
 import Zeus from "./components/Zeus";
 import Hera from "./components/Hera";
+import Poseidon from "./components/Poseidon";
+import Atenea from "./components/Atenea";
+import Hefesto from "./components/Hefesto";
+import Apolo from "./components/Apolo";
+import Artemisa from "./components/Artemisa";
+import Hermes from "./components/Hermes";
+import Ares from "./components/Ares";
+import Afrodita from "./components/Afrodita";
+import Dionisio from "./components/Dionisio";
 import Demeter from "./components/Demeter";
+import ZeusVideo from "./components/ZeusVideo";
+import VideoZeus from "./components/VideoZeus";
 import Fondo from "./components/fondo";
 import PreguntaD from "./components/PreguntaD";
 
@@ -77,7 +88,18 @@ function App() {
         />
         <Route path="/zeus" element={<Zeus />} />
         <Route path="/hera" element={<Hera />} />
+        <Route path="/poseidon" element={<Poseidon />} />
+        <Route path="/atenea" element={<Atenea />} />
+        <Route path="/hefesto" element={<Hefesto />} />
+        <Route path="/apolo" element={<Apolo />} />
+        <Route path="/artemisa" element={<Artemisa />} />
+        <Route path="/hermes" element={<Hermes />} />
+        <Route path="/ares" element={<Ares />} />
+        <Route path="/afrodita" element={<Afrodita />} />
+        <Route path="/dionisio" element={<Dionisio />} />
         <Route path="/demeter" element={<Demeter />} />
+        <Route path="/zeus_video" element={<ZeusVideo />} />
+        <Route path="/videozeus" element={<VideoZeus />} />
         <Route path="/fondo" element={<Fondo />} />
         <Route path="/pregunta_d" element={<PreguntaD />} />
       </Routes>

@@ -46,7 +46,7 @@ function DescripciónDiosesZeus() {
           <Link to="/dioses_olimpo">
             <button>Anterior</button>
           </Link>
-          <Link to="/zeus">
+          <Link to="/zeus_video">
             <button className="btn_siguiente">Siguiente</button>
           </Link>
         </tr>

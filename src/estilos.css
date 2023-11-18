@@ -417,26 +417,26 @@ hr {
 
 }
 
-.centered-button-dioses {
-  position: absolute;
-  left: 50%;
-  margin-top: 30px;
-  transform: translate(-50%, -50%);
-  padding: 10px 20px;
-  font-size: 20px;
+
+
+.btn-dioses button{
   background-color: #BEBEBE;
-  color: black;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
+  height: 40px;
+  font-size: medium;
+  border-radius: 10px;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  width: 150px;
+  color: black;
+  font-weight: bolder;
+  margin-top: 2em;
+  margin-left: 280px;
 }
 
-.centered-button-dioses:hover {
+
+
+.btn-dioses button:hover{
   background-color: #ffffffd7;
 }
-
 
 
 

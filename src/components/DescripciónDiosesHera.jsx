@@ -40,10 +40,12 @@ function DescripciónDiosesHera() {
             </ul>
           </td>
         </tr>
-        <tr className="btn-siguiente">
-          <td></td>
+        <tr className="btn-descripcion-dioses">
+          <Link to="/dioses_olimpo">
+            <button>Anterior</button>
+          </Link>
           <Link to="/hera">
-            <button>Siguiente</button>
+            <button className="btn_siguiente">Siguiente</button>
           </Link>
         </tr>
       </table>

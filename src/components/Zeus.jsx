@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Zeus() {
   return (
-    <div class="dios-container">
+    <div className="dios-container">
       <img
         src="src/assets/img/pergamino.svg"
         alt=""
@@ -11,13 +12,16 @@ function Zeus() {
       <div className="text-overlay-dioses">
         <p className="title-dioses">Zeus</p>
         <p className="limited-text-dioses">
-          Zeus ocupa el papel de “Padre de hombres y Dioses”, es el padre
-          poderoso que ejerce autoridad patriarcal. Junto a él se encuentran sus
-          hermanos, hijos del Titán Cronos y son: Hera, Deméter, Hestia,
-          Poseidón y Hades.
+          Hijo de Cronos y Rea. Zeus era el más poderoso de los dioses griegos.
+          Como dios del cielo y rey del Olimpo, su temperamento afectaba el
+          clima.Es el símbolo de la lluvia, el viento, las tormentas, del ciclo
+          de las estaciones y de la sucesión de la noche y el día. Su misión es
+          mantener el equilibrio del Universo y proteger los privilegios de los
+          dioses
           <br />
           <br />
-          Zeus es el dios de la Luz. Personifica el Cielo con todo su poderío, es el símbolo de la lluvia, el viento, las tormentas, del ciclo de las estaciones y de la sucesión de la noche y el día. Su misión es mantener el equilibrio del Universo y proteger los privilegios de los dioses.
+          Hermano de Hades y de Poseidón. Hermano y esposo de Hera, tuvo muchas
+          amantes humanas y divinas, dando origen a diversos linajes heroicos.
         </p>
       </div>
       <img
@@ -25,7 +29,14 @@ function Zeus() {
         alt=""
         className="bottom-right-image-dioses"
       />
-      <button class="centered-button-dioses">Siguiente</button>
+      <div className="btn-dioses">
+        <Link to="/descripcion_dioses_zeus">
+          <button>Anterior</button>
+        </Link>
+        <Link to="/videozeus">
+          <button>Siguiente</button>
+        </Link>
+      </div>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 function DescripciónDiosesDemeter() {
   return (
     <div>
@@ -26,10 +25,12 @@ function DescripciónDiosesDemeter() {
                 <strong>Fortalezas: </strong>Fertilidad de la tierra
               </li>
               <li>
-                <strong>Debilidades: </strong>Aflicción por la pérdida de su hija Perséfone
+                <strong>Debilidades: </strong>Aflicción por la pérdida de su
+                hija Perséfone
               </li>
               <li>
-                <strong>Rol: </strong>Protectora de la agricultura y las estaciones
+                <strong>Rol: </strong>Protectora de la agricultura y las
+                estaciones
               </li>
               <li>
                 <strong>Arma: </strong>Ninguna
@@ -40,10 +41,12 @@ function DescripciónDiosesDemeter() {
             </ul>
           </td>
         </tr>
-        <tr className="btn-siguiente">
-          <td></td>
+        <tr className="btn-descripcion-dioses">
+          <Link to="/dioses_olimpo">
+            <button>Anterior</button>
+          </Link>
           <Link to="/demeter">
-            <button>Siguiente</button>
+            <button className="btn_siguiente">Siguiente</button>
           </Link>
         </tr>
       </table>

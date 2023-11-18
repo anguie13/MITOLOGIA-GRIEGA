@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Hera() {
   return (
@@ -11,14 +12,13 @@ function Hera() {
       <div className="text-overlay-dioses">
         <p className="title-dioses">Hera</p>
         <p className="limited-text-dioses">
-          Hera es la esposa legitima de Zeus, es la señora de la casa y comparte
-          trono a través del matrimonio con su marido, que a su vez son
-          hermanos. Es madre,hijos suyos, Ares y Hefesto.
+          Esposa de Zeus, Hera era la reina de los dioses griegos y también la
+          diosa del matrimonio, las mujeres, las familias y el nacimiento,
+          actuando como su protectora.
           <br />
-          <br />
-          Hera era la reina de los dioses griegos y también la diosa del
-          matrimonio, las mujeres, las familias y el nacimiento, actuando como
-          su protectora.
+          <br />A menudo cobraba venganza de las infidelidades de su esposo en
+          sus amantes o en la descendencia de éstas, por lo que era antagonista
+          de muchos héroes.
         </p>
       </div>
       <img
@@ -26,7 +26,15 @@ function Hera() {
         alt=""
         className="bottom-right-image-dioses"
       />
-      <button class="centered-button-dioses">Siguiente</button>
+
+      <div className="btn-dioses">
+        <Link to="/descripcion_dioses_hera">
+          <button>Anterior</button>
+        </Link>
+        <Link to="/videozeus">
+          <button>Siguiente</button>
+        </Link>
+      </div>
     </div>
   );
 }
