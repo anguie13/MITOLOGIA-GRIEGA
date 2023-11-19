@@ -33,7 +33,7 @@ function Hefesto() {
         <Link to="/descripcion_dioses_hefesto">
           <button>Anterior</button>
         </Link>
-        <Link to="/videozeus">
+        <Link to="/hefesto_video">
           <button>Siguiente</button>
         </Link>
       </div>

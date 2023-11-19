@@ -35,7 +35,7 @@ function Hermes() {
         <Link to="/descripcion_dioses_hermes">
           <button>Anterior</button>
         </Link>
-        <Link to="/videozeus">
+        <Link to="/hermes_video">
           <button>Siguiente</button>
         </Link>
       </div>

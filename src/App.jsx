@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Index from "./components/Index";
 import Menu from "./components/Menu";
 import DiosesOlimpo from "./components/DiosesOlimpo";
@@ -27,13 +27,14 @@ import Ares from "./components/Ares";
 import Afrodita from "./components/Afrodita";
 import Dionisio from "./components/Dionisio";
 import Demeter from "./components/Demeter";
-import ZeusVideo from "./components/ZeusVideo";
-import VideoZeus from "./components/VideoZeus";
+import DiosesOlimpicosVideo from "./components/DiosesOlimpicosVideo";
+import OtrosDioses from "./components/OtrosDioses";
+import OtrosDiosesCaracteristicas from "./components/OtrosDiosesCaracteristicas";
+
 import Fondo from "./components/fondo";
 import PreguntaD from "./components/PreguntaD";
 
 function App() {
-
   return (
     <Router>
       <Routes>
@@ -100,8 +101,116 @@ function App() {
         <Route path="/afrodita" element={<Afrodita />} />
         <Route path="/dionisio" element={<Dionisio />} />
         <Route path="/demeter" element={<Demeter />} />
-        <Route path="/zeus_video" element={<ZeusVideo />} />
-        <Route path="/videozeus" element={<VideoZeus />} />
+        <Route
+          path="/zeus_video"
+          element={
+            <DiosesOlimpicosVideo
+              url_video="src/assets/video/Olimpicos_Zeus.mp4"
+              link_to="/zeus"
+            />
+          }
+        />
+        <Route
+          path="/hera_video"
+          element={
+            <DiosesOlimpicosVideo
+              url_video="src/assets/video/Olimpicos_Hera.mp4"
+              link_to="/hera"
+            />
+          }
+        />
+        <Route
+          path="/poseidon_video"
+          element={
+            <DiosesOlimpicosVideo
+              url_video="src/assets/video/Olimpicos_Poseidon.mp4"
+              link_to="/poseidon"
+            />
+          }
+        />
+        <Route
+          path="/atenea_video"
+          element={
+            <DiosesOlimpicosVideo
+              url_video="src/assets/video/Olimpicos_Atenea.mp4"
+              link_to="/atenea"
+            />
+          }
+        />
+        <Route
+          path="/hefesto_video"
+          element={
+            <DiosesOlimpicosVideo
+              url_video="src/assets/video/Olimpicos_Hefesto.mp4"
+              link_to="/hefesto"
+            />
+          }
+        />
+        <Route
+          path="/apolo_video"
+          element={
+            <DiosesOlimpicosVideo
+              url_video="src/assets/video/Olimpicos_Apolo.mp4"
+              link_to="/apolo"
+            />
+          }
+        />
+        <Route
+          path="/artemisa_video"
+          element={
+            <DiosesOlimpicosVideo
+              url_video="src/assets/video/Olimpicos_Artemisa.mp4"
+              link_to="/artemisa"
+            />
+          }
+        />
+        <Route
+          path="/hermes_video"
+          element={
+            <DiosesOlimpicosVideo
+              url_video="src/assets/video/Olimpicos_Hermes.mp4"
+              link_to="/hermes"
+            />
+          }
+        />
+        <Route
+          path="/ares_video"
+          element={
+            <DiosesOlimpicosVideo
+              url_video="src/assets/video/Olimpicos_Ares.mp4"
+              link_to="/ares"
+            />
+          }
+        />
+        <Route
+          path="/afrodita_video"
+          element={
+            <DiosesOlimpicosVideo
+              url_video="src/assets/video/Olimpicos_Afrodita.mp4"
+              link_to="/afrodita"
+            />
+          }
+        />
+        <Route
+          path="/dionisio_video"
+          element={
+            <DiosesOlimpicosVideo
+              url_video="src/assets/video/Olimpicos_Dionisio.mp4"
+              link_to="/dionisio"
+            />
+          }
+        />
+        <Route
+          path="/demeter_video"
+          element={
+            <DiosesOlimpicosVideo
+              url_video="src/assets/video/Olimpicos_Demeter.mp4"
+              link_to="/demeter"
+            />
+          }
+        />
+        <Route path="/otros_dioses" element={<OtrosDioses />} />
+        <Route path="/otros_dioses_caracteristicas" element={<OtrosDiosesCaracteristicas />} />
         <Route path="/fondo" element={<Fondo />} />
         <Route path="/pregunta_d" element={<PreguntaD />} />
       </Routes>

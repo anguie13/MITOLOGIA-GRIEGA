@@ -35,7 +35,7 @@ function Ares() {
         <Link to="/descripcion_dioses_ares">
           <button>Anterior</button>
         </Link>
-        <Link to="/videozeus">
+        <Link to="/ares_video">
           <button>Siguiente</button>
         </Link>
       </div>

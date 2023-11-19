@@ -39,7 +39,7 @@ function Dionisio() {
         <Link to="/descripcion_dioses_dionisio">
           <button>Anterior</button>
         </Link>
-        <Link to="/videozeus">
+        <Link to="/dionisio_video">
           <button>Siguiente</button>
         </Link>
       </div>

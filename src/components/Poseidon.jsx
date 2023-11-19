@@ -32,7 +32,7 @@ function Poseidon() {
         <Link to="/descripcion_dioses_poseidon">
           <button>Anterior</button>
         </Link>
-        <Link to="/videozeus">
+        <Link to="/poseidon_video">
           <button>Siguiente</button>
         </Link>
       </div>

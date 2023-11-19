@@ -32,7 +32,7 @@ function Afrodita() {
         <Link to="/descripcion_dioses_afrodita">
           <button>Anterior</button>
         </Link>
-        <Link to="/videozeus">
+        <Link to="/afrodita_video">
           <button>Siguiente</button>
         </Link>
       </div>

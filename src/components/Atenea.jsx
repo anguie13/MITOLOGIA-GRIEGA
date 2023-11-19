@@ -32,7 +32,7 @@ function Atenea() {
         <Link to="/descripcion_dioses_atenea">
           <button>Anterior</button>
         </Link>
-        <Link to="/videozeus">
+        <Link to="/atenea_video">
           <button>Siguiente</button>
         </Link>
       </div>

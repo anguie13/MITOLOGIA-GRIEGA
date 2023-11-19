@@ -10,7 +10,7 @@ function Deméter() {
         className="pergamino-image"
       />
       <div className="text-overlay-dioses">
-        <p className="title-dioses">Demeter</p>
+        <p className="title-dioses">Deméter</p>
         <p className="limited-text-dioses">
           Hija de Cronos y Rea. Hermana de Zeus. Diosa de la fertilidad, las
           estaciones, de la agricultura y la naturaleza. Los antiguos griegos
@@ -34,7 +34,7 @@ function Deméter() {
         <Link to="/descripcion_dioses_demeter">
           <button>Anterior</button>
         </Link>
-        <Link to="/videozeus">
+        <Link to="/demeter_video">
           <button>Siguiente</button>
         </Link>
       </div>

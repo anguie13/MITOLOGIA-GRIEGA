@@ -34,7 +34,7 @@ function Apolo() {
         <Link to="/descripcion_dioses_apolo">
           <button>Anterior</button>
         </Link>
-        <Link to="/videozeus">
+        <Link to="/apolo_video">
           <button>Siguiente</button>
         </Link>
       </div>

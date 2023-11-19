@@ -33,7 +33,7 @@ function Artemisa() {
         <Link to="/descripcion_dioses_artemisa">
           <button>Anterior</button>
         </Link>
-        <Link to="/videozeus">
+        <Link to="/artemisa_video">
           <button>Siguiente</button>
         </Link>
       </div>

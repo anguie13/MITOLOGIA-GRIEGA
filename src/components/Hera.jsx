@@ -31,7 +31,7 @@ function Hera() {
         <Link to="/descripcion_dioses_hera">
           <button>Anterior</button>
         </Link>
-        <Link to="/videozeus">
+        <Link to="/hera_video">
           <button>Siguiente</button>
         </Link>
       </div>
