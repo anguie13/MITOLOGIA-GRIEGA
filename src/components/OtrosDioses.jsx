@@ -19,85 +19,47 @@ function OtrosDioses() {
       </div>
       <div className="boton-otros-dioses-sobre-imagen">
         <div className="wrapper">
-          <Link to="/otros_dioses_caracteristicas">
+          <Link to="/otros_dioses_caracteristicas_gea">
             <OtrosDiosesBoton nom_dios="GEA" />
           </Link>
           <BotonVacio />
           <BotonVacio />
           <BotonVacio />
-          <Link to="/descripcion_dioses_hera">
+          <Link to="/otros_dioses_caracteristicas_urano">
             <OtrosDiosesBoton nom_dios="URANO" />
           </Link>
           <BotonVacio />
           <BotonVacio />
           <BotonVacio />
-          <Link to="/descripcion_dioses_poseidon">
+          <Link to="/otros_dioses_caracteristicas_crono">
             <OtrosDiosesBoton nom_dios="CRONO" />
           </Link>
           <BotonVacio />
-          <Link to="/descripcion_dioses_atenea">
+          <Link to="/otros_dioses_caracteristicas_rea">
             <OtrosDiosesBoton nom_dios="REA" />
           </Link>
           <BotonVacio />
-          <Link to="/descripcion_dioses_hefesto">
+          <Link to="/otros_dioses_caracteristicas_hades">
             <OtrosDiosesBoton nom_dios="HADES" />
           </Link>
           <BotonVacio />
           <BotonVacio />
           <BotonVacio />
-          <Link to="/descripcion_dioses_apolo">
+          <Link to="/otros_dioses_caracteristicas_metis">
             <OtrosDiosesBoton nom_dios="METIS" />
           </Link>
           <BotonVacio />
           <BotonVacio />
           <BotonVacio />
-          <Link to="/descripcion_dioses_artemisa">
+          <Link to="/otros_dioses_caracteristicas_persefone">
             <OtrosDiosesBoton nom_dios="PERSÉFONE" />
           </Link>
           <BotonVacio />
-          <Link to="/descripcion_dioses_hermes">
-            <OtrosDiosesBoton nom_dios="EROS" />
-          </Link>
-          <BotonVacio />
-          <Link to="/descripcion_dioses_ares">
-            <OtrosDiosesBoton nom_dios="NYX" />
-          </Link>
-          <BotonVacio />
-          <BotonVacio />
-          <BotonVacio />
-          <Link to="/descripcion_dioses_afrodita">
-            <OtrosDiosesBoton nom_dios="ÉREBO" />
-          </Link>
-          <BotonVacio />
-          <BotonVacio />
-          <BotonVacio />
-          <Link to="/descripcion_dioses_dionisio">
-            <OtrosDiosesBoton nom_dios="TIQUE" />
-          </Link>
-          <BotonVacio />
-          <Link to="/descripcion_dioses_demeter">
-            <OtrosDiosesBoton nom_dios="SELENE" />
-          </Link>
-          <BotonVacio />
-          <Link to="/descripcion_dioses_ares">
+          <Link to="/otros_dioses_caracteristicas_hecate">
             <OtrosDiosesBoton nom_dios="HÉCATE" />
           </Link>
           <BotonVacio />
-          <BotonVacio />
-          <BotonVacio />
-          <Link to="/descripcion_dioses_afrodita">
-            <OtrosDiosesBoton nom_dios="MOIRAS" />
-          </Link>
-          <BotonVacio />
-          <BotonVacio />
-          <BotonVacio />
-          <Link to="/descripcion_dioses_dionisio">
-            <OtrosDiosesBoton nom_dios="EOLO" />
-          </Link>
-          <BotonVacio />
-          <Link to="/descripcion_dioses_demeter">
-            <OtrosDiosesBoton nom_dios="PÁN" />
-          </Link>
+
 
           <Link to="/zeus">
             <div className="btn-juego">

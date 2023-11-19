@@ -1,46 +1,51 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function OtrosDiosesCaracteristicas() {
+function OtrosDiosesCaracteristicas({
+  img_dios = "",
+  nom_dios = "",
+  dominio = "",
+  simbolos = "",
+  caracteristicas = "",
+  ruta_anterior = "",
+  ruta_siguiente = "",
+}) {
   return (
-    <div className="dios-container2">
-      <img
-        src="src/assets/img/pergamino-otros-dioses.svg"
-        alt=""
-        className="pergamino-image-otros-dioses"
-      />
-      <div className="text-overlay-otros-dioses">
-        <p className="limited-text-otros-dioses">
-          <img
-            src="src/assets/img/descripcion_demeter.jpg"
-            alt=""
-            className="bottom-right-image-otros-dioses"
-          />
-          <strong>dios</strong>
-          <br />
-          <br />
-          <strong>Dominio: </strong>xxxx
-          <br />
-          <br />
-          <strong>Simbolos: </strong>xxxxxx
-          <br />
-          <br />
-          <strong>Caracteristicas: </strong>
-          Hermano de Hades y de Poseidón. Hermano y esposo de Hera, tuvo muchas
-          amantes humanas y divinas, dando origen a diversos linajes heroicos.
-        </p>
-      </div>
-      <div className="btn-dioses">
-        <div className="btn-otros-dioses">
-          <Link to="/descripcion_dioses_zeus">
-            <button>Anterior</button>
-          </Link>
-          <Link to="/zeus_video">
-            <button>Siguiente</button>
-          </Link>
+    <div class="contenedor-otros">
+      <div class="imagen-principal-otros">
+        <img
+          src="src/assets/img/pergamino-otros-dioses.svg"
+          alt="Imagen Principal"
+        />
+        <div className="text-overlay-otros-dioses">
+          <div className="limited-text-otros-dioses">
+            <strong>{nom_dios}</strong>
+            <br />
+            <br />
+            <strong>Dominio: </strong>
+            {dominio}
+            <br />
+            <br />
+            <strong>Simbolos: </strong>
+            {simbolos}
+            <br />
+            <br />
+            <strong>Caracteristicas: </strong>
+            {caracteristicas}
+          </div>
+        </div>
+        <div class="imagen-derecha-otros">
+          <img src={img_dios} alt="Imagen Derecha" />
         </div>
       </div>
-      <div className="btn-otros-dioses2"></div>
+      <div class="btn-dioses-otros">
+        <Link to={ruta_anterior}>
+          <button>Anterior</button>
+        </Link>
+        <Link to={ruta_siguiente}>
+          <button>Siguiente</button>
+        </Link>
+      </div>
     </div>
   );
 }

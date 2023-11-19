@@ -28,7 +28,7 @@ body {
 
 .fondo4 {
   width: auto;
-  height: 3100px;
+  height: 2100px;
 }
 
 .texto-sobre-imagen {
@@ -111,7 +111,7 @@ body {
 
 .boton-otros-dioses-sobre-imagen {
   position: absolute;
-  top: 100em; /* Coloca el botón en la mitad superior de la imagen */
+  top: 70em; /* Coloca el botón en la mitad superior de la imagen */
   left: 50%; /* Coloca el botón en el centro horizontal de la imagen */
   transform: translate(-50%, -50%); /* Centra el botón correctamente */
   border: none; /* Elimina el borde del botón */
@@ -437,7 +437,7 @@ hr {
 
 .text-overlay-otros-dioses {
   position: absolute;
-  top: 32%;
+  top: 2%;
   left: 60%;
   transform: translate(-50%, -50%);
   color: white;
@@ -456,9 +456,9 @@ hr {
 }
 
 .limited-text-otros-dioses {
-  
+  margin-top: 22em;
   color: black;
-  font-size: 22px;
+  font-size: 21px;
   text-align: left;
 }
 
@@ -596,6 +596,77 @@ hr {
   background-color: #d8c565;
 }
 
+
+
+.contenedor-otros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+
+.imagen-principal-otros {
+  position: relative;
+  width: 97%;
+  overflow: hidden;
+}
+
+.imagen-principal-otros img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-izquierdo-otros {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+  margin-left: 400px;
+}
+
+.imagen-derecha-otros {
+  position: absolute;
+  top: 50%;
+  left: 250px;
+  transform: translateY(-50%);
+  width: 180px;
+}
+
+.botones-otros {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.botones-otros button {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-dioses-otros button{
+  background-color: #BEBEBE;
+  height: 40px;
+  font-size: medium;
+  border-radius: 10px;
+  border: none;
+  width: 150px;
+  color: black;
+  font-weight: bolder;
+  margin-top: 2em;
+  margin-left: 150px;
+}
+
+
+
+.btn-dioses-otros button:hover{
+  background-color: #ffffffd7;
+}
 
 
 
