@@ -14,17 +14,25 @@ function Menu() {
       <div className="boton-menu-sobre-imagen">
         <div className="box_menu">
           <BotonVacio />
+
+          <Link to="/heroes">
           <MenuBoton
             url="src/assets/img/btn_heroes.png"
             text_alt="boton heroes"
             text_btn="Héroes"
           />
+          </Link>
 
+          
+          <Link to="/criaturas">
           <MenuBoton
             url="src/assets/img/btn_criaturas.png"
             text_alt="boton Criaturas y Monstruos"
             text_btn="Criaturas y Monstruos"
           />
+          </Link>
+
+          
           <BotonVacio />
 
           <Link to="/dioses_olimpo">
@@ -37,11 +45,16 @@ function Menu() {
 
           <BotonVacio />
           <BotonVacio />
+
+          <Link to="/oraculos">
           <MenuBoton
             url="src/assets/img/btn_oraculos.png"
             text_alt="boton oraculos"
             text_btn="Oráculos"
           />
+          </Link>
+
+          
         </div>
       </div>
     </div>

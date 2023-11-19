@@ -61,7 +61,7 @@ function OtrosDioses() {
           <BotonVacio />
 
 
-          <Link to="/zeus">
+          <Link to="/juego_dioses">
             <div className="btn-juego">
               <button>
                 <p>

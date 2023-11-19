@@ -30,6 +30,15 @@ import Demeter from "./components/Demeter";
 import DiosesOlimpicosVideo from "./components/DiosesOlimpicosVideo";
 import OtrosDioses from "./components/OtrosDioses";
 import OtrosDiosesCaracteristicas from "./components/OtrosDiosesCaracteristicas";
+import JuegoDioses from "./components/JuegoDioses";
+import Heroes from "./components/Heroes";
+import DescripcionHeroes from "./components/DescripcionHeroes";
+import Criaturas from "./components/Criaturas";
+import DescripcionCriaturas from "./components/DescripcionCriaturas";
+import Oraculos from "./components/Oraculos";
+import DescripcionOraculos from "./components/DescripcionOraculos";
+
+import Game from "./Game";
 
 import Fondo from "./components/fondo";
 import PreguntaD from "./components/PreguntaD";
@@ -321,6 +330,227 @@ function App() {
               caracteristicas="Hécate es una diosa triple asociada con la magia. A menudo es invocada en rituales mágicos y se asocia con la Luna."
               ruta_anterior="/otros_dioses_caracteristicas_persefone"
               ruta_siguiente="/otros_dioses"
+            />
+          }
+        />
+        <Route path="/game" element={<Game />} />
+        <Route path="/juego_dioses" element={<JuegoDioses />} />
+        <Route path="/heroes" element={<Heroes />} />
+        <Route
+          path="/descripcion_heroes_aquiles"
+          element={
+            <DescripcionHeroes
+              nom="AQUILES"
+              resumen="Aquiles es uno de los héroes más destacados de la mitología griega y es conocido por su valentía y destreza en la guerra. Es un guerrero griego invulnerable en todo su cuerpo, excepto por su talón, donde su madre lo sujetó al sumergirlo en el río Estigia."
+              url_img="src/assets/img/aquiles.jpg"
+              btn_ant="/heroes"
+              btn_sig="/descripcion_heroes_ulises"
+            />
+          }
+        />
+        <Route
+          path="/descripcion_heroes_ulises"
+          element={
+            <DescripcionHeroes
+              nom="ULISES"
+              resumen="Ulises es conocido por su astucia y habilidad para la estrategia. Es el protagonista de la 'Odisea', un poema épico atribuido a Homero. Ulises es famoso por su ingenio y su viaje de regreso a casa después de la Guerra de Troya."
+              url_img="src/assets/img/ulises.png"
+              btn_ant="/descripcion_heroes_aquiles"
+              btn_sig="/descripcion_heroes_orfeo"
+            />
+          }
+        />
+        <Route
+          path="/descripcion_heroes_orfeo"
+          element={
+            <DescripcionHeroes
+              nom="ORFEO"
+              resumen="Orfeo es un músico y poeta legendario conocido por su extraordinario talento con la lira. Se le atribuye haber encantado a la naturaleza con su música y haber descendido al inframundo para intentar recuperar a su amada esposa, Eurídice."
+              url_img="src/assets/img/orfeo.webp"
+              btn_ant="/descripcion_heroes_ulises"
+              btn_sig="/descripcion_heroes_perseo"
+            />
+          }
+        />
+        <Route
+          path="/descripcion_heroes_perseo"
+          element={
+            <DescripcionHeroes
+              nom="PERSEO"
+              resumen="Perseo es conocido por su valentía y destreza en la lucha contra monstruos. Es famoso por matar a la Gorgona Medusa y por su participación en la historia de Andrómeda."
+              url_img="src/assets/img/perseo.webp"
+              btn_ant="/descripcion_heroes_orfeo"
+              btn_sig="/descripcion_heroes_edipo"
+            />
+          }
+        />
+        <Route
+          path="/descripcion_heroes_edipo"
+          element={
+            <DescripcionHeroes
+              nom="EDIPO"
+              resumen="Edipo es una figura trágica en la mitología griega. Su historia está vinculada a la profecía de matar a su padre y casarse con su madre, sin saber que estos eran sus padres biológicos."
+              url_img="src/assets/img/edipo.webp"
+              btn_ant="/descripcion_heroes_perseo"
+              btn_sig="/descripcion_heroes_heracles"
+            />
+          }
+        />
+        <Route
+          path="/descripcion_heroes_heracles"
+          element={
+            <DescripcionHeroes
+              nom="HERACLES"
+              resumen="Heracles es uno de los héroes más fuertes y famosos de la mitología griega. Es conocido por sus doce trabajos, hazañas sobresalientes y su fuerza sobrehumana."
+              url_img="src/assets/img/heracles.avif"
+              btn_ant="/descripcion_heroes_edipo"
+              btn_sig="/heroes"
+            />
+          }
+        />
+        <Route path="/criaturas" element={<Criaturas />} />
+        <Route
+          path="/descripcion_criaturas_quimera"
+          element={
+            <DescripcionCriaturas
+              nom="QUIMERA"
+              resumen="La Quimera es una criatura híbrida con partes de varios animales. Suele tener la cabeza de un león, el cuerpo de una cabra y una cola de serpiente. Fue derrotada por Belerofonte, quien la venció montando al mítico caballo alado Pegaso"
+              url_img="src/assets/img/quimera.jpg"
+              btn_ant="/criaturas"
+              btn_sig="/descripcion_criaturas_minotauro"
+            />
+          }
+        />
+        <Route
+          path="/descripcion_criaturas_minotauro"
+          element={
+            <DescripcionCriaturas
+              nom="MINOTAURO"
+              resumen="El Minotauro es un ser mitad humano y mitad toro. Se encuentra en el centro del laberinto en Creta y es el resultado de la unión de la reina Pasífae y un toro blanco enviado por Poseidón. Fue finalmente derrotado por Teseo."
+              url_img="src/assets/img/minotauro.webp"
+              btn_ant="/descripcion_criaturas_quimera"
+              btn_sig="/descripcion_criaturas_cerbero"
+            />
+          }
+        />
+        <Route
+          path="/descripcion_criaturas_cerbero"
+          element={
+            <DescripcionCriaturas
+              nom="CERBERO"
+              resumen="Cerbero es el feroz perro de tres cabezas que guarda la entrada al inframundo en la mitología griega. Es hijo de Tifón y Equidna. Cerbero asegura que los muertos no escapen y que los vivos no entren sin permiso."
+              url_img="src/assets/img/cerbero.jpg"
+              btn_ant="/descripcion_criaturas_minotauro"
+              btn_sig="/descripcion_criaturas_ciclope"
+            />
+          }
+        />
+        <Route
+          path="/descripcion_criaturas_ciclope"
+          element={
+            <DescripcionCriaturas
+              nom="CICLOPE"
+              resumen="Los Cíclopes son gigantes con un solo ojo en el centro de la frente. Son conocidos por su habilidad para forjar objetos poderosos. El más famoso de ellos, Polifemo, fue derrotado por Odiseo (Ulises) durante su viaje de regreso a casa"
+              url_img="src/assets/img/ciclope.jpg"
+              btn_ant="/descripcion_criaturas_cerbero"
+              btn_sig="/descripcion_criaturas_grifo"
+            />
+          }
+        />
+        <Route
+          path="/descripcion_criaturas_grifo"
+          element={
+            <DescripcionCriaturas
+              nom="GRIFO"
+              resumen="Los Grifos son criaturas con cuerpo de león y cabeza de águila. A menudo se les representa como guardianes de tesoros en la mitología griega. También son conocidos por su velocidad y ferocidad."
+              url_img="src/assets/img/grifo.png"
+              btn_ant="/descripcion_criaturas_ciclope"
+              btn_sig="/descripcion_criaturas_esfinge"
+            />
+          }
+        />
+        <Route
+          path="/descripcion_criaturas_esfinge"
+          element={
+            <DescripcionCriaturas
+              nom="ESFINGE"
+              resumen="La Esfinge es una criatura con cabeza de mujer, cuerpo de león y alas de ave. Se dice que plantea enigmas a los viajeros y devora a aquellos que no pueden resolverlos. Edipo fue capaz de resolver el enigma de la Esfinge, lo que llevó a su derrota."
+              url_img="src/assets/img/esfinge.jpg"
+              btn_ant="/descripcion_criaturas_grifo"
+              btn_sig="/menu"
+            />
+          }
+        />
+        <Route path="/oraculos" element={<Oraculos />} />
+        <Route
+          path="/descripcion_oraculos_delfos"
+          element={
+            <DescripcionOraculos
+              nom="Oráculo de Delfos"
+              resumen="El Oráculo de Delfos, situado en el templo de Apolo en Delfos, era el oráculo más famoso y venerado en la antigua Grecia. La sacerdotisa de Delfos, conocida como la Pitia, inhalaría vapores tóxicos provenientes de fisuras en la tierra y entraría en un estado profético para transmitir las respuestas de Apolo."
+              url_img="src/assets/img/delfos.jpg"
+              btn_ant="/oraculos"
+              btn_sig="/descripcion_oraculos_dodoma"
+            />
+          }
+        />
+        <Route
+          path="/descripcion_oraculos_dodoma"
+          element={
+            <DescripcionOraculos
+              nom="Oráculo de Dódona"
+              resumen="Este oráculo estaba ubicado en Dódona, en el noroeste de Grecia. En Dódona, la respuesta de los dioses se buscaba a través del sonido de las hojas de un roble sagrado y el vuelo de los pájaros. Se creía que los sacerdotes interpretaban los sonidos y mensajes divinos."
+              url_img="src/assets/img/dodoma.jpg"
+              btn_ant="/descripcion_oraculos_delfos"
+              btn_sig="/descripcion_oraculos_didima"
+            />
+          }
+        />
+        <Route
+          path="/descripcion_oraculos_didima"
+          element={
+            <DescripcionOraculos
+              nom="Oráculo de Dídima"
+              resumen="Dídima era otro importante sitio oracular dedicado a Apolo. Estaba ubicado en la costa de Jonia. El método de consulta implicaba la interpretación de grietas en la corteza de un árbol sagrado y las respuestas se obtenían a través de los sacerdotes."
+              url_img="src/assets/img/didima.jpg"
+              btn_ant="/descripcion_oraculos_dodoma"
+              btn_sig="/descripcion_oraculos_epiro"
+            />
+          }
+        />
+        <Route
+          path="/descripcion_oraculos_epiro"
+          element={
+            <DescripcionOraculos
+              nom="Oráculo de Epiro"
+              resumen="Este oráculo estaba ubicado en la región de Epiro. Al igual que en Dódona, se creía que los dioses respondían a través de sonidos en la naturaleza, especialmente los sonidos del viento y del agua."
+              url_img="src/assets/img/epiro.jpg"
+              btn_ant="/descripcion_oraculos_didima"
+              btn_sig="/descripcion_oraculos_claros"
+            />
+          }
+        />
+        <Route
+          path="/descripcion_oraculos_claros"
+          element={
+            <DescripcionOraculos
+              nom="Oráculo de Claros"
+              resumen="Situado cerca de Mileto, el Oráculo de Claros era otro lugar dedicado a Apolo. Las respuestas se obtenían a través de un método similar al de Delfos, con un sacerdote profético que interpretaba las respuestas divinas."
+              url_img="src/assets/img/claros.jpg"
+              btn_ant="/descripcion_oraculos_epiro"
+              btn_sig="/descripcion_oraculos_amon"
+            />
+          }
+        />
+        <Route
+          path="/descripcion_oraculos_amon"
+          element={
+            <DescripcionOraculos
+              nom="Oráculo de Amón en Libia"
+              resumen="Aunque no estaba en territorio griego, el oráculo de Amón en Libia era consultado por los griegos, especialmente después de la conquista de Egipto por Alejandro Magno. Se creía que Amón, dios egipcio, proporcionaba respuestas a través de sus sacerdotes."
+              url_img="src/assets/img/amon.jpg"
+              btn_ant="/descripcion_oraculos_claros"
+              btn_sig="/"
             />
           }
         />
