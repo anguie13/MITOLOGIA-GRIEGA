@@ -1,62 +1,39 @@
 body {
   margin: 0 auto;
-  overflow-x: hidden;
   background-color: black;
+  display: flex;
   align-items: center;
+  justify-content: center; /* Para centrar horizontalmente el contenido */
+  overflow-x: hidden;
 }
+
+/*index*/
 
 .contenedor {
   position: relative;
   text-align: center;
+  display: flex;
+}
+
+.contenedor-preguntas {
+  position: relative;
+  text-align: center;
+  display: flex;
+  background-image: url(https://image.slidesdocs.com/responsive-images/background/3d-illustration-in-decorative-concept-perfect-for-architecture-and-building-scene-advertisements-and-wallpapers-powerpoint-background_983fe5c92b__960_540.jpg);
 }
 
 .fondo {
-  width: 100%; /* Ajusta el ancho de la imagen según sea necesario */
-  height: auto; /* Hace que la altura se ajuste automáticamente para mantener la proporción */
-  display: block;
-}
-
-.fondo2 {
-  width: auto;
-  height: 2400px;
-}
-
-.fondo3 {
-  width: 130%; /* Ajusta el ancho de la imagen según sea necesario */
-  height: auto;
-}
-
-.fondo6 {
-  width: 100%; /* Ajusta el ancho de la imagen según sea necesario */
-  height: auto;
-}
-
-.fondo7 {
-  width: 100%; /* Ajusta el ancho de la imagen según sea necesario */
-  height: 10%;
-  overflow-y: hidden;
-}
-
-.fondo4 {
-  width: auto;
-  height: 2100px;
-}
-
-.fondo5{
   position: fixed;
-    width: 100%;
-    height: 750px;
-    background-image: url(https://image.slidesdocs.com/responsive-images/background/3d-illustration-in-decorative-concept-perfect-for-architecture-and-building-scene-advertisements-and-wallpapers-powerpoint-background_983fe5c92b__960_540.jpg);
-    background-size: contain;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    color: "white",
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 .texto-sobre-imagen {
-  position: absolute;
-  top: 20%; /* Coloca el texto en la mitad superior de la imagen */
+  position: fixed;
+  top: 10em; /* Coloca el texto en la mitad superior de la imagen */
   left: 50%; /* Coloca el texto en el centro horizontal de la imagen */
   transform: translate(-50%, -50%); /* Centra el texto correctamente */
   color: white; /* Color del texto */
@@ -68,16 +45,240 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.boton-sobre-imagen {
+  position: fixed;
+  top: 20em; /* Coloca el botón en la mitad superior de la imagen */
+  left: 50%; /* Coloca el botón en el centro horizontal de la imagen */
+  transform: translate(-50%, -50%); /* Centra el botón correctamente */
+  background-color: #ff8912; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 15px 50px; /* Ajusta el relleno del botón según sea necesario */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Añade esquinas redondeadas al botón */
+  cursor: pointer;
+  font-size: 25px; /* Cambia el cursor al pasar sobre el botón */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  transition: box-shadow 0.3s ease;
+}
+
+/*menu*/
+
+.fondo3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.boton-menu-sobre-imagen {
+  position: fixed;
+  top: 22em; /* Coloca el botón en la mitad superior de la imagen */
+  left: 50%; /* Coloca el botón en el centro horizontal de la imagen */
+  transform: translate(-50%, -50%); /* Centra el botón correctamente */
+  color: white; /* Color del texto del botón */
+  padding: 15px 50px; /* Ajusta el relleno del botón según sea necesario */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Añade esquinas redondeadas al botón */
+  cursor: pointer;
+  font-size: 25px; /* Cambia el cursor al pasar sobre el botón */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  transition: box-shadow 0.3s ease;
+}
+
+
+/*dioses olimpo*/
+
+
+.fondo2 {
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 2500px;
+  max-height: 3000px;
+  overflow-y: scroll;
+}
+
 .texto-principales-dioses {
   position: absolute;
-  top: 15%; /* Coloca el texto en la mitad superior de la imagen */
+  top: 7%; /* Coloca el texto en la mitad superior de la imagen */
   left: 50%; /* Coloca el texto en el centro horizontal de la imagen */
-  transform: translate(-50%, -70%); /* Centra el texto correctamente */
+  transform: translate(-50%, -50%); /* Centra el texto correctamente */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #1a215f;
   -webkit-text-stroke: 1px #9ae3f6;
   font-size: 50px;
 }
+
+.boton-dios-sobre-imagen {
+  position: absolute;
+  top: 80em; /* Coloca el botón en la mitad superior de la imagen */
+  left: 50%; /* Coloca el botón en el centro horizontal de la imagen */
+  transform: translate(-50%, -50%); /* Centra el botón correctamente */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Añade esquinas redondeadas al botón */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  transition: box-shadow 0.3s ease;
+}
+
+.wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 170px 170px 170px;
+  grid-gap: 30px;
+  color: #444;
+  padding: 2em;
+}
+
+
+
+/*dioses caracteristicas*/
+
+
+.tablaDescripcion {
+  color: white;
+  padding-block: 80px;
+  position: inherit;
+  padding-inline: 0px;
+}
+
+.descripcion_img {
+  width: 400px;
+  height: auto;
+}
+
+.fondo_dios {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+
+.tablaDescripcion th td {
+  padding: 15px;
+  text-align: left;
+}
+
+
+
+.columna2 {
+  width: 90%;
+  padding-left: 0%;
+}
+
+.columna2 ul {
+  list-style: none; /* Quitar la decoración de la lista desordenada */
+  padding: 0; /* Eliminar el relleno predeterminado de la lista */
+  margin: 0; /* Eliminar el margen predeterminado de la lista */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+  text-align: justify;
+}
+
+.columna2 li {
+  margin-bottom: 30px;
+}
+
+
+
+.btn-siguiente {
+  margin-top: 20px;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.btn-descripcion-dioses button {
+  background-color: #cda434;
+  height: 40px;
+  font-size: medium;
+  border-radius: 10px;
+  border: none;
+  width: 150px;
+  color: black;
+  font-weight: bolder;
+  margin-top: 2em;
+  margin-left: 120px;
+}
+
+.btn_siguiente {
+  position: absolute;
+  left: 75%;
+}
+
+.btn-descripcion-dioses button:hover {
+  background-color: #f9db5c;
+}
+
+
+
+/*dioses*/
+
+.dios-container {
+  position: relative;
+  width: 100%;
+  max-width: 1270px;
+  margin-inline: 2em;
+}
+
+.dios-container2 {
+  position: absolute;
+  width: 100%;
+  max-width: 3000px;
+  margin-inline: 2em;
+}
+
+
+.pergamino-image {
+  width: 800px;
+  height: auto;
+  display: flex;
+}
+
+.pergamino-oraculo {
+  width: auto;
+  height: 40%;
+  display: flex;
+}
+
+
+.fondo6 {
+  width: 100%;
+  height: auto;
+}
+
+.fondo7 {
+  width: 100%;
+  height: 10%;
+  overflow-y: hidden;
+}
+
+.fondo4 {
+  width: auto;
+  height: 2100px;
+}
+
+.fondo5 {
+  position: fixed;
+  width: 100%;
+  height: 750px;
+  background-image: url(https://image.slidesdocs.com/responsive-images/background/3d-illustration-in-decorative-concept-perfect-for-architecture-and-building-scene-advertisements-and-wallpapers-powerpoint-background_983fe5c92b__960_540.jpg);
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  color: "white";
+}
+
+
 
 .texto-otros-dioses {
   position: absolute;
@@ -96,23 +297,6 @@ body {
   font-size: 50px;
 }
 
-.boton-sobre-imagen {
-  position: absolute;
-  top: 40%; /* Coloca el botón en la mitad superior de la imagen */
-  left: 50%; /* Coloca el botón en el centro horizontal de la imagen */
-  transform: translate(-50%, -50%); /* Centra el botón correctamente */
-  background-color: #ff8912; /* Color de fondo del botón */
-  color: white; /* Color del texto del botón */
-  padding: 15px 50px; /* Ajusta el relleno del botón según sea necesario */
-  border: none; /* Elimina el borde del botón */
-  border-radius: 5px; /* Añade esquinas redondeadas al botón */
-  cursor: pointer;
-  font-size: 25px; /* Cambia el cursor al pasar sobre el botón */
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bolder;
-  transition: box-shadow 0.3s ease;
-}
-
 .boton-sobre-imagen:hover {
   filter: drop-shadow(
     0 0 2em #cdd6d9aa
@@ -120,17 +304,7 @@ body {
   background-color: #f1c40f;
 }
 
-.boton-dios-sobre-imagen {
-  position: absolute;
-  top: 80em; /* Coloca el botón en la mitad superior de la imagen */
-  left: 50%; /* Coloca el botón en el centro horizontal de la imagen */
-  transform: translate(-50%, -50%); /* Centra el botón correctamente */
-  border: none; /* Elimina el borde del botón */
-  border-radius: 5px; /* Añade esquinas redondeadas al botón */
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bolder;
-  transition: box-shadow 0.3s ease;
-}
+
 
 .boton-heroes-sobre-imagen {
   position: absolute;
@@ -156,26 +330,7 @@ body {
   transition: box-shadow 0.3s ease;
 }
 
-.boton-menu-sobre-imagen {
-  position: absolute;
-  top: 100%; /* Coloca el botón en la mitad superior de la imagen */
-  left: 50%; /* Coloca el botón en el centro horizontal de la imagen */
-  transform: translate(-50%, -50%); /* Centra el botón correctamente */
-  border: none; /* Elimina el borde del botón */
-  border-radius: 5px; /* Añade esquinas redondeadas al botón */
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bolder;
-}
 
-.wrapper {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 250px 250px 250px;
-  grid-template-rows: 170px 170px 170px;
-  grid-gap: 30px;
-  color: #444;
-  padding: 2em;
-}
 
 .box_menu {
   justify-items: legacy;
@@ -285,83 +440,17 @@ hr {
   font-size: 50px;
 }
 
-.tablaDescripcion {
-  color: white;
-  padding-block: 100px;
-}
 
-.tablaDescripcion th td {
-  padding: 15px;
-  text-align: left;
-}
-
-.columna1 {
-  width: 10%;
-}
-
-.columna2 {
-  width: 90%;
-  padding-left: 0%;
-}
-
-.columna2 ul {
-  list-style: none; /* Quitar la decoración de la lista desordenada */
-  padding: 0; /* Eliminar el relleno predeterminado de la lista */
-  margin: 0; /* Eliminar el margen predeterminado de la lista */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: larger;
-  text-align: justify;
-}
-
-.columna2 li{
-  margin-bottom: 30px; 
-}
-
-.descripcion_img{
-  width: 400px;
-  height: auto;
-}
-
-.btn-siguiente{
-  margin-top: 20px;
-  
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.pergamino {
   text-align: center;
 }
 
-.btn-descripcion-dioses button{
-  background-color: #cda434;
-  height: 40px;
-  font-size: medium;
-  border-radius: 10px;
-  border: none;
-  width: 150px;
-  color: black;
-  font-weight: bolder;
-  margin-top: 2em;
-  margin-left: 120px;
-}
-
-.btn_siguiente{
-  position: absolute;
-  left: 75%;
-}
-
-
-.btn-descripcion-dioses button:hover{
-  background-color: #f9db5c;
-}
-
-.pergamino{
-  text-align: center;
-}
-
-.dios img{
+.dios img {
   width: 80%;
   height: auto;
 }
 
-.btn-siguiente-dios{
+.btn-siguiente-dios {
   background-color: #bbbbb9;
   height: 40px;
   font-size: medium;
@@ -375,7 +464,7 @@ hr {
   margin-bottom: 10px;
 }
 
-.dios{
+.dios {
   text-align: center;
   margin: 0 auto;
 }
@@ -393,15 +482,9 @@ hr {
   overflow: hidden; /* Evita que el texto sobresalga del contenedor */
 }
 
-
-
-
-
 .box-dios img {
   width: 100%;
 }
-
-
 
 .overlay-text-dios {
   position: absolute;
@@ -417,35 +500,22 @@ hr {
   justify-content: center;
 }
 
-.overlay-text-dios img{
+.overlay-text-dios img {
   width: 20px;
 }
 
-.btn-dios{
+.btn-dios {
   position: absolute;
   left: 50%;
 }
 
 
 
-
-.dios-container {
-  position: relative;
-  width: 100%;
-  max-width: 1270px;
-  margin-inline: 2em;
-}
-
 .dios-container2 {
   position: absolute;
   margin-left: 1em;
 }
 
-.pergamino-image {
-  width: 100%;
-  display: block;
-
-}
 
 
 .pergamino-image-otros-dioses {
@@ -467,7 +537,6 @@ hr {
   max-height: 50%;
   overflow: visible;
   word-wrap: break-word; /* Forzar saltos de línea */
-
 }
 
 .text-overlay-otros-dioses {
@@ -480,11 +549,9 @@ hr {
   text-align: right;
   overflow: visible;
   word-wrap: break-word; /* Forzar saltos de línea */
-
 }
 
 .limited-text-dioses {
-  
   color: black;
   font-size: 25px;
   text-align: center;
@@ -498,23 +565,21 @@ hr {
 }
 
 .title-dioses {
-  
   color: black;
   font-size: 50px;
   text-align: center;
   font-weight: bolder;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  -webkit-text-stroke: 2px #D4AF37; /* Añade un borde a cada letra en navegadores WebKit (Chrome, Safari) */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-text-stroke: 2px #d4af37; /* Añade un borde a cada letra en navegadores WebKit (Chrome, Safari) */
 }
 
 .title-otros-dioses {
-  
   color: black;
   font-size: 50px;
   text-align: center;
   font-weight: bolder;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  -webkit-text-stroke: 2px #D4AF37; /* Añade un borde a cada letra en navegadores WebKit (Chrome, Safari) */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-text-stroke: 2px #d4af37; /* Añade un borde a cada letra en navegadores WebKit (Chrome, Safari) */
 }
 
 .bottom-right-image-dioses {
@@ -524,7 +589,6 @@ hr {
   max-width: 300px; /* Ajusta según sea necesario */
   object-fit: cover; /* Ajusta según sea necesario para mantener la relación de aspecto */
   border-radius: 50%; /* Hace que la imagen sea circular */
-
 }
 
 .bottom-right-image-otros-dioses {
@@ -538,10 +602,8 @@ hr {
   margin-bottom: 20px;
 }
 
-
-
-.btn-dioses button{
-  background-color: #BEBEBE;
+.btn-dioses button {
+  background-color: #bebebe;
   height: 40px;
   font-size: medium;
   border-radius: 10px;
@@ -553,17 +615,15 @@ hr {
   margin-left: 280px;
 }
 
-
-
-.btn-dioses button:hover{
+.btn-dioses button:hover {
   background-color: #ffffffd7;
 }
 
-.btn-otros-dioses2{
+.btn-otros-dioses2 {
   margin-bottom: 1em;
 }
 
-.container_video{
+.container_video {
   margin-left: 20%;
   margin-right: 20%;
   padding-top: 0%;
@@ -576,8 +636,8 @@ hr {
   padding-top: 0;
 }
 
-.btn-video button{
-  background-color: #BEBEBE;
+.btn-video button {
+  background-color: #bebebe;
   height: 40px;
   font-size: medium;
   border-radius: 10px;
@@ -589,7 +649,7 @@ hr {
   margin-left: 25%;
 }
 
-.btn-otros-dioses button{
+.btn-otros-dioses button {
   background-color: #eadb8e;
   height: 40px;
   font-size: medium;
@@ -602,15 +662,11 @@ hr {
   margin-left: 280px;
 }
 
-
-
-.btn-otros-dioses button:hover{
+.btn-otros-dioses button:hover {
   background-color: #d8c565;
 }
 
-
-
-.btn-menu button{
+.btn-menu button {
   background-color: #eadb8e;
   height: 40px;
   font-size: medium;
@@ -622,14 +678,11 @@ hr {
   margin-left: 120%;
 }
 
-
-
-.btn-menu button:hover{
+.btn-menu button:hover {
   background-color: #d8c565;
 }
 
-
-.btn-juego button{
+.btn-juego button {
   background-color: #eadb8e;
   height: 100px;
   font-size: medium;
@@ -642,17 +695,13 @@ hr {
   margin-left: 280px;
 }
 
-.btn-juego p{
+.btn-juego p {
   font-size: 13px;
 }
 
-
-
-.btn-juego button:hover{
+.btn-juego button:hover {
   background-color: #d8c565;
 }
-
-
 
 .contenedor-otros {
   display: flex;
@@ -705,8 +754,8 @@ hr {
   cursor: pointer;
 }
 
-.btn-dioses-otros button{
-  background-color: #BEBEBE;
+.btn-dioses-otros button {
+  background-color: #bebebe;
   height: 40px;
   font-size: medium;
   border-radius: 10px;
@@ -718,9 +767,7 @@ hr {
   margin-left: 150px;
 }
 
-
-
-.btn-dioses-otros button:hover{
+.btn-dioses-otros button:hover {
   background-color: #ffffffd7;
 }
 
@@ -739,7 +786,7 @@ hr {
   position: "relative";
   top: 400px;
   left: 200px;
-  flex-Direction: row;
+  flex-direction: row;
 }
 
 .boton-game {
@@ -748,17 +795,11 @@ hr {
   color: black;
   background-color: wheat;
   margin: 10px;
-  border-Radius: 8px;
+  border-radius: 8px;
 }
 
-.img_heroes{
-  height: 400px;
+.img_heroes {
+  height: 150px;
   width: auto;
   max-width: 600px;
 }
-
-
-
-
-
-

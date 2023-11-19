@@ -116,7 +116,7 @@ const JuegoDioses = () => {
 
   return (
     <div
-      className="fondo5"
+      className="contenedor-preguntas"
       style={{ textAlign: "center", display: "flex", justifyContent: "center" }}
     >
       <div style={{ flex: 1, marginRight: "20px" }}>
@@ -195,7 +195,7 @@ const JuegoDioses = () => {
             fontSize: "20px",
             backgroundColor: "black",
             padding: 0,
-            marginInline: "250px",
+            marginInline: "300px",
           }}
         >
           Puntuación: {score}
@@ -236,7 +236,7 @@ const JuegoDioses = () => {
               fontWeight: "bold",
               backgroundImage: "url()",
               top: "50px",
-              left: "12em",
+              left: "4em",
               fontfamily: "sans-serif",
               fontsize: "50px",
             }}

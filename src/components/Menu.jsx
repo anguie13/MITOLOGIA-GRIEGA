@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Menu() {
   return (
-    <div>
+    <div className="contenedor">
       <img
         className="fondo3"
         src="src/assets/img/fondo_menu.svg"
@@ -16,23 +16,21 @@ function Menu() {
           <BotonVacio />
 
           <Link to="/heroes">
-          <MenuBoton
-            url="src/assets/img/btn_heroes.png"
-            text_alt="boton heroes"
-            text_btn="Héroes"
-          />
+            <MenuBoton
+              url="src/assets/img/btn_heroes.png"
+              text_alt="boton heroes"
+              text_btn="Héroes"
+            />
           </Link>
 
-          
           <Link to="/criaturas">
-          <MenuBoton
-            url="src/assets/img/btn_criaturas.png"
-            text_alt="boton Criaturas y Monstruos"
-            text_btn="Criaturas y Monstruos"
-          />
+            <MenuBoton
+              url="src/assets/img/btn_criaturas.png"
+              text_alt="boton Criaturas y Monstruos"
+              text_btn="Criaturas y Monstruos"
+            />
           </Link>
 
-          
           <BotonVacio />
 
           <Link to="/dioses_olimpo">
@@ -47,14 +45,12 @@ function Menu() {
           <BotonVacio />
 
           <Link to="/oraculos">
-          <MenuBoton
-            url="src/assets/img/btn_oraculos.png"
-            text_alt="boton oraculos"
-            text_btn="Oráculos"
-          />
+            <MenuBoton
+              url="src/assets/img/btn_oraculos.png"
+              text_alt="boton oraculos"
+              text_btn="Oráculos"
+            />
           </Link>
-
-          
         </div>
       </div>
     </div>

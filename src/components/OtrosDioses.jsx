@@ -1,6 +1,5 @@
 import React from "react";
 import "../estilos.css";
-import PrincipalesDiosesBoton from "./PrincipalesDiosesBoton";
 import BotonVacio from "./BotonVacio";
 import TitleDioses from "./TitleDioses";
 import { Link } from "react-router-dom";

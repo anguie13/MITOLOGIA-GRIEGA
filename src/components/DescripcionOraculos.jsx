@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function DescripcionOraculos({nom='', resumen='', url_img='', btn_ant='', btn_sig=''}) {
   return (
-    <div className="dios-container">
+    <div className="container">
       <img
         src="src/assets/img/fondo_descripcion_oraculo.avif"
         alt=""

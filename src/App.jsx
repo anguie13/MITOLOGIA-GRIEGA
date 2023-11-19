@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import React, { useState } from "react";
 import Index from "./components/Index";
 import Menu from "./components/Menu";
 import DiosesOlimpo from "./components/DiosesOlimpo";

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function DiosesOlimpo() {
   return (
-    <div>
+    <div className="contenedor">
       <img
         className="fondo2"
         src="src/assets/img/fondo_dioses_olimpo.svg"
